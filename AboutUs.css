@@ -1,0 +1,219 @@
+html {
+    position: relative;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+header{
+    height: 60px;
+    background-color: rgb(10, 10, 10);
+}
+header h1 {
+    display: inline-block;
+    padding: 10px;
+}
+header h1 a {
+    color: #d8d0ce;
+}
+header h1 a:hover {
+    color: white;
+    transition: 0.3s;
+}
+header ul {
+    float: right;
+}
+header ul li{
+    padding: 19px;
+    display: inline-block;
+}
+header ul li a {
+    color: #d8d0ce;
+    transition: 0.3s;
+}
+header ul li a:hover {
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.navbar {
+    color: #fffefe;
+    float: right;
+    display: none;
+    padding: 13px;
+}
+.navbar:hover {
+    cursor: pointer;
+    background-color: #d8d0ce;
+    transition: 0.3s;
+}
+#check {
+    display: none;
+}
+@media (max-width:768px) {
+    .navbar {
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+}
+.sidebar {
+    margin-top: -210px;
+    width: 100%;
+    background-color: rgba(10, 10, 10, .9)
+}
+#check:checked ~ .sidebar {
+    margin-top: 0px;
+    transition: 0.3s;
+}
+#check:not(:checked) ~.sidebar {
+    margin-top: -210px;
+    transition: 0.3s;
+}
+.sidebar ul li a {
+    color: #d8d0ce;
+    margin-left: 70px;
+}
+.sidebar ul li a:hover {
+    color: white;
+    transition: 0.3s;
+}
+.sidebar ul li {
+    padding: 10px;
+}
+.profil{
+    margin-top: 50px;
+    height: 490px;
+    background-color: #ececec;
+}
+.profil img{
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 570px;
+    border-radius: 50%;
+}
+.profil h1{
+    margin-left: 420px;
+    font-size:60px;
+}
+.profil p{
+    margin-top: 10px;
+    margin-left: 500px;
+    font-size:30px;
+}
+.aboutme {
+    height: 300px;
+}
+.aboutme h2{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 620px;
+}
+.aboutme hr {
+    width: 350px;
+    margin-left: 510px;
+    margin-top: 15px;
+    border-top: 5px solid black;
+}
+.aboutme p{
+    font-size: 14px;
+    margin-left: 250px;
+    margin-right: 500px;
+    margin-top: 30px;
+}
+section {
+    min-height: 600px;
+
+}
+.portofolio {
+    height: 800px;
+    background-color: #ececec;
+    font-family: garamond;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+.portofolio h2{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 600px;
+}
+.portofolio hr{
+    width: 360px;
+    margin-left: 515px;
+    margin-top: 15px;
+    border-top: 5px solid black;
+}
+.portofolioisi{
+    background-color: #ececec;
+}
+.portofolioisi img {
+    background-color: #ececec;
+    padding: 10px;
+    width: 300px;
+}
+.portofolioisi .isi1 {
+    background-color: white;
+    padding: 10px 30px 6px 30px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 700px;
+}
+.portofolioisi .isi1 img{
+    width: 300px;
+    margin-left: 70px;
+}
+.portofolioisi .isi2 {
+    background-color: white;
+    padding: 10px 30px 6px 30px;
+    margin-top: -219px;
+    margin-left: 700px;
+    margin-right: 100px;
+}
+.portofolioisi .isi2 img{
+    width: 300px;
+    height: 180px;
+    margin-left: 70px;
+}
+.portofolioisi .isi3{
+    background-color: white;
+    padding: 10px 30px 6px 30px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 700px;
+}
+.portofolioisi .isi3 img{
+    width: 300px;
+    margin-left: 70px;
+}
+.portofolioisi .isi4{
+    background-color: white;
+    padding: 10px 30px 6px 30px;
+    margin-top: -414px;
+    margin-left: 700px;
+    margin-right: 100px;
+}
+.portofolioisi .isi4 img{
+    width: 300px;
+    height: 370px;
+    margin-left: 70px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #333;
+    color: white;
+    padding-top: 30px;
+}
+footer p{
+    margin-top: -10px;
+    margin-left: 570px;
+}
